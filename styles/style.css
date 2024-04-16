@@ -1,0 +1,387 @@
+@charset "UTF-8";
+
+/* Aqui eu zerei os espaçamentos internos/externos dos objetos */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: #000000d2;
+    box-shadow: 0 0 35px 5px #48abe0;
+    animation: shadows 5s infinite;
+    height: 150px;
+}
+
+@keyframes shadows {
+    0% { box-shadow: #48abe0 0 0 35px 5px; }
+    50% { box-shadow: blueviolet 0 0 35px 5px; }
+    75% { box-shadow: rebeccapurple 0 0 35px 5px;}
+    100% { box-shadow: #48abe0 0 0 35px 5px; }
+}
+
+header > img {
+    width: 200px;
+    position: relative;
+    float: left;
+    bottom: 30px;
+    left: 50px;
+}
+
+nav {
+    position: relative;
+    display: flex;
+}
+
+nav > ul {
+    list-style-type: none;
+}
+
+nav > ul > li {
+    position: relative;
+    float: left;
+    top: 70px;
+    width: 230px;
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: 10px;
+    margin-left: 100px;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+nav > ul > li > a:hover {
+    background-color: blue;
+}
+
+body > main > article {
+    text-align: center;
+    padding: 10px;
+    margin-top: 65px;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-style: solid;
+    border-color: rgba(5, 84, 255, 0.692);
+}
+
+body > main > article > h2 { 
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#sobre {
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    margin-top: 150px;
+    color: rgb(0, 0, 0);
+}
+body > main > article > p{
+    font-size: 25px;
+    color:rgb(0, 0, 0);
+    margin-top: 1rem;
+}
+
+body > main > article > p > i{
+    color:rgb(255, 255, 255);
+}
+
+#Serv1{
+    position: relative;
+    float: left;
+    width: 350px;
+    height: 300px;
+    margin-left: 50px;
+    background-color: white;
+    box-shadow: 0 0 20px 3px #070707;
+}
+
+#Serv1 > strong{
+    position: relative;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#Serv1 > p{
+    position: relative;
+    font-size: 17px;
+    margin-top: 50px;
+}
+#Serv1 > img{
+    text-align: center;
+}
+#Serv2{
+    position: relative;
+    float: left;
+    width: 350px;
+    height: 300px;
+    margin-left: 79px;
+    background-color: white;
+    box-shadow: 0 0 20px 3px #070707;
+}
+#Serv2 > strong{
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+#Serv2 > p{
+    position: relative;
+    font-size: 17px;
+    margin-top: 50px;
+}
+#Serv3{
+    width: 350px;
+    height: 300px;
+    margin-left: 900px;
+    background-color: white;
+    box-shadow: 0 0 20px 3px #070707;
+}
+#Serv3 > strong{
+    font-size: 20px;
+}
+#Serv3 > p{
+    position: relative;
+    font-size: 17px;
+    margin-top: 50px;
+}
+body > footer{
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 35px;
+    color: rgb(0, 0, 0);
+}
+
+#divNumeros{
+    position: relative;
+    font-size: xx-large;
+    color:rgb(34, 92, 56);
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin-left: 350px;
+    margin-right: 350px;
+    top: 15px;
+    bottom: 1px;
+    border-style: solid;
+}
+
+#divEmail{
+    position: relative;
+    font-size: xx-large;
+    color:rgb(43, 34, 92);
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 40px;
+    bottom: 1px;
+    border-style: solid;
+}
+
+#divNumeros > p{
+    margin-top: 0.5rem;
+}
+
+body > main > article > h2{
+    color:rgb(5, 63, 255);
+    font-size: 50px;
+}
+
+#divSobre{
+    background-color: rgb(255, 255, 255);
+    margin-left: 2px;
+}
+
+#divSobre > p{
+    color: rgb(0, 0, 0);
+}
+
+#imgHome {
+    display: block;
+    background-color: #000000;
+    box-shadow: 0px 0px 20px rgb(43, 5, 255);
+    position: relative;
+    width: 1100px;
+    top: 210px;
+    margin-left: 125px;
+    height: 518px;
+}
+
+#imgHome > img{
+    position: relative;
+    bottom: 53px;
+}
+
+#textoImg_h1 {
+    position: relative;
+    font-size: 100px;
+    color: rgb(5, 63, 255);
+    text-align: center;
+    bottom: 355px;
+    margin-left: 650px;
+}
+
+#textoImg_h2 {
+    position: relative;
+    font-family: "Anta", sans-serif;
+    font-size: 45px;
+    color: rgba(255, 5, 5, 0.692);
+    text-align: center;
+    bottom: 355px;
+    margin-left: 650px;
+}
+
+#menuOpen{
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    header{
+        top: 1px;
+    }
+    
+    #Serv1{
+        position: relative;
+    }
+    #Serv2{
+        margin-left: 50px;
+        margin-top: 40px;
+        background-color: white;
+        box-shadow: 0 0 20px 3px #070707;
+    }
+    #Serv3{
+        position: relative;
+        margin-top: 730px;
+        right: 850px;
+        background-color: white;
+        box-shadow: 0 0 20px 3px #070707;
+    }
+    
+    #divNumeros{
+        position: relative;
+        font-size: x-large;
+        color:rgb(34, 92, 56);
+        background-color: rgb(255, 255, 255);
+        right: 40px;
+        width: 300px;
+        border-style: solid;
+    }
+    
+    #divEmail{
+        position: relative;
+        font-size: x-large;
+        color:rgb(43, 34, 92);
+        background-color: rgb(255, 255, 255);
+        right: 40px;
+        width: 300px;
+        margin-top: 40px;
+        border-style: solid;
+    }
+}
+@media screen and (max-width: 900px){
+    body > main > article > p{
+        font-size: x-large;
+    }
+    header{
+        height: 150px;
+        width: 500px;
+        bottom: 380px;
+        transition: width 0.5s, height 0.7s;
+    }
+    header > img {
+        position: relative;
+        width: 150px;
+        margin-top: 30px;
+    }
+    header > nav{
+        position: relative;
+        display: none;
+        width: 100px;
+    }
+    header > nav > ul > li{
+        position: relative;
+        right: 50px;
+        border-style: solid;
+        width: 293px;
+        border-color: rgb(13, 0, 128);
+    }
+    header > nav > ul > li > a{
+        margin-right: 35px;
+    }
+    #menuClose{
+        position: fixed;
+        left: 30px;
+        top: 40px;
+        color: white;
+    }
+    #menuOpen{
+        display: block;
+        position: fixed;
+        left: 30px;
+        top: 40px;
+        color: white;
+    }
+    #imgHome{
+        margin-left: 70px;
+        margin-top: 10px;
+        height: 400px;
+        width: 360px;
+    }
+    #imgHome > img{
+        width: 400px;
+        margin-top: 155px;
+    }
+    #textoImg_h1 {
+        position: relative;
+        margin-left: 5px;
+        margin-top: 10px;
+        height: 400px;
+        width: 353px;
+        bottom: 470px;
+        font-size: 60px;
+    }
+    #textoImg_h2 {
+        position: relative;
+        margin-left: 5px;
+        margin-top: 10px;
+        height: 400px;
+        width: 353px;
+        bottom: 800px;
+        font-size: 25px;
+    }
+
+    #divNumeros{
+        position: relative;
+        font-size: x-large;
+        color:rgb(34, 92, 56);
+        background-color: rgb(255, 255, 255);
+        display: block;
+        margin-left: 90px;
+        width: 300px;
+        border-style: solid;
+    }
+    
+    #divEmail{
+        position: relative;
+        font-size: x-large;
+        color:rgb(43, 34, 92);
+        background-color: rgb(255, 255, 255);
+        display: block;
+        width: 300px;
+        margin-left: 90px;
+        margin-top: 40px;
+        border-style: solid;
+    }
+    
+}
